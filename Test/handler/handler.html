@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.shape {
+  width: 40%;
+  height: 12px;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<p>On Focus Evenrt to add the "mystyle" class to the DIV element:</p>
+
+<div id="john">
+
+<input type="text" id="name" class="important" onfocus="myFunction()"/><br>
+
+<input type="text" id="address" class="important" onfocus="myFunction()"/><br>
+
+<input type="text" id="email" class="important" onfocus="myFunction()"/><br>
+
+<input type="text" id="age" onfocus="myFunction()"/>
+
+</div>
+
+<script>
+function myFunction() 
+{
+var el = document.getElementById('name');
+   if (el.classList.contains("important")) 
+  {
+    el.classList.add("shape");
+  }
+  
+  var el2 = document.getElementById('address');
+   if (el2.classList.contains("important")) 
+  {
+    el2.classList.add("shape");
+  }
+var el3 = document.getElementById('email');
+   if (el3.classList.contains("important")) 
+  {
+    el3.classList.add("shape");
+  }
+var el4 = document.getElementById('age');
+   if (el4.classList.contains("important")) 
+  {
+    el4.classList.add("shape");
+  }
+}
+
+</script>
+
+</body>
+</html>
+
